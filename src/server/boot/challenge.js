@@ -16,9 +16,9 @@ import isNumeric from 'validator/lib/isNumeric';
 import isURL from 'validator/lib/isURL';
 
 import jwt from 'jsonwebtoken';
-import { jwtSecret } from '../../../../config/secrets';
+import { jwtSecret } from '../../../configs/secrets';
 
-import { environment, deploymentEnv } from '../../../../config/env.json';
+import { environment, deploymentEnv } from '../../../configs/env.json';
 import { fixPartiallyCompletedChallengeItem } from '../../common/utils';
 import { getChallenges } from '../utils/get-curriculum';
 import { ifNoUserSend } from '../utils/middleware';

@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
-const { allowedOrigins } = require('../../../../config/cors-settings');
+const { allowedOrigins } = require('../../../configs/cors-settings');
 // homeLocation is being used as a fallback here. If the one provided by the
 // client is invalid we default to this.
-const { homeLocation } = require('../../../../config/env.json');
-const { availableLangs } = require('../../../../config/i18n');
+const { homeLocation } = require('../../../configs/env.json');
+const { availableLangs } = require('../../../configs/i18n');
 
 function getReturnTo(encryptedParams, secret, _homeLocation = homeLocation) {
   let params;

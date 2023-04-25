@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import passport from 'passport';
 import { isEmail } from 'validator';
 
-import { jwtSecret } from '../../../../config/secrets';
+import { jwtSecret } from '../../../configs/secrets';
 
 import { decodeEmail } from '../../common/utils';
 import {

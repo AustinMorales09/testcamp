@@ -13,7 +13,7 @@ import {
   certTypeIdMap,
   certIds,
   oldDataVizId
-} from '../../../../config/certification-settings';
+} from '../../../configs/certification-settings';
 import { reportError } from '../middlewares/sentry-error-handler.js';
 
 import { deprecatedEndpoint } from '../utils/disabled-endpoints';

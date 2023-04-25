@@ -15,8 +15,8 @@ import { Observable } from 'rx';
 import uuid from 'uuid/v4';
 import { isEmail } from 'validator';
 
-import { blocklistedUsernames } from '../../../../config/constants';
-import { apiLocation } from '../../../../config/env.json';
+import { blocklistedUsernames } from '../../../configs/constants';
+import { apiLocation } from '../../../configs/env.json';
 
 import { wrapHandledError } from '../../server/utils/create-handled-error.js';
 import {

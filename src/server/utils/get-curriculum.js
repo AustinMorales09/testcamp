@@ -7,7 +7,7 @@ import { flatten } from 'lodash';
 // collected.
 
 // eslint-disable-next-line import/no-unresolved
-import curriculum from '../../../../config/curriculum.json';
+import curriculum from '../../../configs/curriculum.json';
 
 export function getChallenges() {
   return Object.keys(curriculum)

@@ -3,7 +3,7 @@ import {
   durationKeysConfig,
   donationOneTimeConfig,
   donationSubscriptionConfig
-} from '../../../../config/donation-settings';
+} from '../../../configs/donation-settings';
 
 export function validStripeForm(amount, duration, email) {
   return isEmail('' + email) &&

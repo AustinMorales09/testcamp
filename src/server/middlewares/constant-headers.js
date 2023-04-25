@@ -1,5 +1,5 @@
-import { allowedOrigins } from '../../../../config/cors-settings';
-import { homeLocation } from '../../../../config/env.json';
+import { allowedOrigins } from '../../../configs/cors-settings';
+import { homeLocation } from '../../../configs/env.json';
 
 export default function constantHeaders() {
   return function (req, res, next) {
