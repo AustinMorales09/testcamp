@@ -3,7 +3,7 @@ import session from 'express-session';
 
 const MongoStore = MongoStoreFactory(session);
 const sessionSecret = process.env.SESSION_SECRET;
-const url = process.env.MONGODB || process.env.MONGOHQ_URL;
+const url = 'mongodb+srv://amorales:kable123@cluster0.gm6pm.mongodb.net/test'|| process.env.MONGOHQ_URL;
 
 export default function sessionsMiddleware() {
   return session({
