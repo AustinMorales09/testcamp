@@ -8,7 +8,7 @@ const loopback = require('loopback');
 const boot = require('loopback-boot');
 const morgan = require('morgan');
 
-const { sentry } = require('../../../config/secrets');
+const { sentry } = require('../../configs/secrets');
 const { setupPassport } = require('./component-passport');
 
 const log = createDebugger('fcc:server');
