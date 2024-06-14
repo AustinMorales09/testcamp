@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+require('./lib')
 const dotenv = require('dotenv');
 
 const filePath = path.resolve('..', '.env');

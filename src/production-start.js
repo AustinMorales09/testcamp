@@ -7,6 +7,7 @@ const startTime = Date.now();
 // force logger to always output
 // this may be brittle
 log.enabled = true;
+// comment
 // this is where server starts booting up
 const app = require('./server');
 
