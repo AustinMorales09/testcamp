@@ -27,7 +27,10 @@
     "dataSource": "db",
     "public": true
   },
- 
+  "Donation": {
+    "dataSource": "db",
+    "public": false
+  },
   "Email": {
     "dataSource": "mail",
     "public": false
