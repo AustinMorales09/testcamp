@@ -22,7 +22,7 @@
     "babel-dev-server": "babel-node --inspect=0.0.0.0 ./src/server/index.js",
     "build": "babel src --out-dir lib --ignore '/**/*.test.js' --copy-files --no-copy-ignored",
     "develop": "node src/development-start.js",
-    "start": "cross-env DEBUG=fcc* node lib/production-start.js"
+    "start": "cross-env DEBUG=fcc* node lib/production-start.js --omit-dev"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
