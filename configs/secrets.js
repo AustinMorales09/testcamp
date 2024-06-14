@@ -40,7 +40,7 @@ const {
 } = process.env;
 // magic comment
 module.exports = {
-  db: 'mongodb+srv://amorales:kable123@cluster0.gm6pm.mongodb.net/test' || MONGOHQ_URL,
+  db: 'mongodb+srv://newUser:test@cluster0.gm6pm.mongodb.net/' || MONGOHQ_URL,
 
   cookieSecret: COOKIE_SECRET,
   jwtSecret: JWT_SECRET,
@@ -96,15 +96,15 @@ module.exports = {
   },
 
   stripe: {
-    public: STRIPE_PUBLIC_KEY,
-    secret: STRIPE_SECRET_KEY
+    // public: STRIPE_PUBLIC_KEY,
+    // secret: STRIPE_SECRET_KEY
   },
 
   paypal: {
-    client: PAYPAL_CLIENT_ID,
-    secret: PAYPAL_SECRET,
-    verifyWebhookURL: PAYPAL_VERIFY_WEBHOOK_URL,
-    tokenUrl: PAYPAL_API_TOKEN_URL,
-    webhookId: PAYPAL_WEBHOOK_ID
+    // client: PAYPAL_CLIENT_ID,
+    // secret: PAYPAL_SECRET,
+    // verifyWebhookURL: PAYPAL_VERIFY_WEBHOOK_URL,
+    // tokenUrl: PAYPAL_API_TOKEN_URL,
+    // webhookId: PAYPAL_WEBHOOK_ID
   }
 };
