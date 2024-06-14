@@ -34,7 +34,7 @@ const {
 } = process.env;
 
 module.exports = {
-  db: 'mongodb+srv://newUser:test@cluster0.gm6pm.mongodb.net/' || MONGOHQ_URL,
+  db: MONGODB || MONGOHQ_URL,
 
   cookieSecret: COOKIE_SECRET,
   jwtSecret: JWT_SECRET,

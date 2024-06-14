@@ -1,4 +1,4 @@
-var secrets = require('../../configs/secrets');
+var secrets = require('../../config/secrets');
 
 module.exports = {
   db: {

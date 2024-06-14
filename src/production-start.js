@@ -7,7 +7,6 @@ const startTime = Date.now();
 // force logger to always output
 // this may be brittle
 log.enabled = true;
-// comment
 // this is where server starts booting up
 const app = require('./server');
 
@@ -28,5 +27,5 @@ timeoutHandler = setTimeout(() => {
   // pm2 should restart this in production
   throw new Error(message);
 }, killTime * 1000);
-// comment
+
 app.dataSources.db.on('connected', onConnect);
