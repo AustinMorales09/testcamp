@@ -21,8 +21,8 @@
   "main": "none",
   "scripts": {
     "babel-dev-server": "babel-node --inspect=0.0.0.0 ./src/server/index.js",
-    "build": "babel src --out-dir lib --ignore '/**/*.test.js' --copy-files --no-copy-ignored",
-  
+    "build": "babel src --out-dir lib --ignore '/**/*.test.js' ",
+    
     "develop": "node src/development-start.js",
     "start": "cross-env DEBUG=fcc* node lib/production-start.js"
   },

@@ -1,3 +1,4 @@
+require('dotenv').config()
 const {
   MONGODB,
   MONGOHQ_URL,
@@ -32,7 +33,7 @@ const {
   STRIPE_PUBLIC_KEY,
   STRIPE_SECRET_KEY
 } = process.env;
-
+console.log('auth0 domain is:' +AUTH0_DOMAIN)
 module.exports = {
   db: MONGODB || MONGOHQ_URL,
 
