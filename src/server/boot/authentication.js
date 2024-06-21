@@ -48,6 +48,7 @@ module.exports = function enableAuthentication(app) {
   // Use a local mock strategy for signing in if we are in dev mode.
   // Otherwise we use auth0 login. We use a string for 'true' because values
   // set in the env file will always be strings and never boolean.
+  console.log('local auth is :' +process.env.LOCAL_MOCK_AUTH)
   if (process.env.LOCAL_MOCK_AUTH === 'true') {
     api.get(
       '/signin',

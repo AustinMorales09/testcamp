@@ -64,6 +64,7 @@ function getRedirectParams(req, _normalizeParams = normalizeParams) {
   // we need client locale and origin to construct the redirect url.
   const returnUrl = new URL(url ? url : process.env.HOME_LOCATION);
   const origin = returnUrl.origin;
+  console.log('origin is: '+ origin)
   // if this is not one of the client languages, validation will convert
   // this to '' before it is used.
   const pathPrefix = returnUrl.pathname.split('/')[1];
