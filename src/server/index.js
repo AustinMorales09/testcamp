@@ -1,5 +1,5 @@
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../../../.env') });
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const Sentry = require('@sentry/node');
 // const Tracing = require('@sentry/tracing');
@@ -19,6 +19,8 @@ const app = loopback();
 
 app.set('state namespace', '__fcc__');
 app.set('port', process.env.API_PORT || 3000);
+
+console.log('port is :' + process.env.PORT)
 app.set('views', path.join(__dirname, 'views'));
 app.use(loopback.token());
 app.use(
@@ -56,7 +58,7 @@ db.on(
 );
 
 app.start = _.once(function () {
-  const server = app.listen(app.get('port'), function () {
+  const server = app.listen(app.get(process.env.PORT), function () {
     app.emit('started');
     log(
       'freeCodeCamp server listening on port %d in %s',
