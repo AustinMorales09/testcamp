@@ -1,5 +1,5 @@
 module.exports = {
-  host: '127.0.0.1',
+  host: 'mongodb+srv://newUser:test@cluster0.gm6pm.mongodb.net/',
   sessionSecret: process.env.SESSION_SECRET,
 
   github: {

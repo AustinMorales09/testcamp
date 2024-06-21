@@ -1,6 +1,6 @@
 {
   "restApiRoot": "/api",
-  "host": "127.0.0.1",
+  "host": "mongodb+srv://newUser:test@cluster0.gm6pm.mongodb.net/",
   "port": 3000,
   "legacyExplorer": false,
   "remoting": {
