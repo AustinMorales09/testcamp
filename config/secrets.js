@@ -1,4 +1,3 @@
-require('dotenv').config()
 const {
   MONGODB,
   MONGOHQ_URL,
@@ -31,11 +30,17 @@ const {
   SENTRY_DSN,
 
   STRIPE_PUBLIC_KEY,
-  STRIPE_SECRET_KEY
+  STRIPE_SECRET_KEY,
+
+  PAYPAL_CLIENT_ID,
+  PAYPAL_SECRET,
+  PAYPAL_VERIFY_WEBHOOK_URL,
+  PAYPAL_API_TOKEN_URL,
+  PAYPAL_WEBHOOK_ID
 } = process.env;
-console.log('auth0 domain is:' +AUTH0_DOMAIN)
+// magic comment
 module.exports = {
-  db: MONGODB || MONGOHQ_URL,
+  db: 'mongodb+srv://newUser:test@cluster0.gm6pm.mongodb.net/' || MONGOHQ_URL,
 
   cookieSecret: COOKIE_SECRET,
   jwtSecret: JWT_SECRET,
@@ -93,5 +98,13 @@ module.exports = {
   stripe: {
     public: STRIPE_PUBLIC_KEY,
     secret: STRIPE_SECRET_KEY
+  },
+
+  paypal: {
+    client: PAYPAL_CLIENT_ID,
+    secret: PAYPAL_SECRET,
+    verifyWebhookURL: PAYPAL_VERIFY_WEBHOOK_URL,
+    tokenUrl: PAYPAL_API_TOKEN_URL,
+    webhookId: PAYPAL_WEBHOOK_ID
   }
 };
